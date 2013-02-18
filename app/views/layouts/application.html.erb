@@ -5,7 +5,69 @@
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="container">
+    <div class="row container">
+
+    <div class="twelve columns">
+
+      <!-- Header -->
+      <div class="row">
+        <div class="seven columns centered text-centered">
+          <h3>Floyd County Executive Internship</h3>
+        </div>
+      </div>
+      <!-- End Header -->
+
+
+
+     <div class="row">
+
+       <!-- Sidebar -->
+       <div class="two columns">
+        <%= image_tag "logo_face.png", :id => "logo" %>
+        <ul class="nav-bar vertical">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="images.html">Images</a></li>
+          <li class="has-flyout">
+            <a href="interns.html">Interns</a>
+            <a href="#" class="flyout-toggle"><span> </span></a>
+            <ul class="flyout">
+              <li><a href="intern_profiles.html">Armuchee</a></li>
+              <li><a href="intern_profiles.html">Pepperell</a></li>
+              <li><a href="intern_profiles.html">Model</a></li>
+              <li><a href="intern_profiles.html">Coosa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+       </div>
+       <!-- End Sidebar -->
+
+       <!-- Information body -->
+       <div id="information_body" class="ten columns">
+
+         <!-- Header -->
+         <div class="row">
+           <div class="ten columns">
+             <h3>Welcome!</h3>
+           </div>
+         </div>
+         <!-- End Header -->
+
+         <img id="welcome_image" src="http://placehold.it/200x200" /><p>Executive internship is a program for High school seniors to become familiar with the world of work in a professional environment. It is a year-long experience that counts towards honors credits. Each individual has a professional sponsor and is individually placed into a workplace and "job" that specifically interests them. Each intern is unpaid. There they must demonstrate an understanding of the work habits necessary for effective participation in an organization. They are to develop an awareness of career opportunities and after their time there, they must be able to explain how an executive or manager functions within an organization.</p>
+
+	<p>Some of the criteria that students must meet are that they have to have a 3.0 GPA or higher. They must have strong recommendations from several teachers. They must have a good attendance record. They must have no discipline referrals. And they must demonstrate a strong performance in an interview.</p>
+
+	<p>For the interns final project, at the end of the second semester, a PowerPoint must be presented from all interns. It shows the photos of their experiences throughout their internship. It can show reflections of lessons learned including "light bulb" moments, humorous moments, sad moments, changes in attitude, and different types of shifts in the workplace. It should also show goals for the future after the internship experience has ended.</p>
+       </div>
+       <!-- Ending information body -->
+
+     </div>
+
+    </div>
+      <!--
+        Refinery specific stuff.
+        Make it fit.
+
       <header id="header">
         <%= render '/refinery/header' -%>
       </header>
@@ -16,6 +78,8 @@
         <%= render '/refinery/footer' -%>
       </footer>
     </div>
+    !-->
+  </div>
     <%= render '/refinery/javascripts' %>
   </body>
 </html>
