@@ -1,0 +1,80 @@
+#header{
+
+  background-color: white;
+
+}
+
+
+h3{
+  color: black;
+  text-shadow: 4px 4px 13px rgba(0, 0, 0, 0.50);
+
+}
+
+
+body{
+  background-color: black;
+  background-image: image-url('pw_maze_black.png');
+
+
+}
+
+.text-centered{
+
+  text-align:center;
+
+}
+
+
+
+
+#information_body{
+  margin-top: 3%;
+
+}
+
+.container{
+
+  background-color: white;
+
+}
+
+#welcome_image{
+
+  float:left;
+  margin-right:10px;
+
+}
+
+
+/* Only make container div whole height if screen size is >= 768px */
+@media (min-width:768px) {
+  body,html{
+
+    height:100%;
+
+  }
+
+  .container{
+
+    height:100%;
+
+  }
+
+}
+
+
+@media (max-width: 767px){
+
+  #logo{
+
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+}
+
+
+
+
