@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::InternProfiles::Admin::InternProfilesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.intern_profiles_admin_intern_profiles_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_intern_profiles_admin_intern_profile_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::InternProfiles::Admin::InternProfilesController.sortable? && ::Refinery::InternProfiles::InternProfile.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Intern Profiles"),
+                 refinery.intern_profiles_admin_intern_profiles_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Intern Profiles"),
+                 refinery.intern_profiles_admin_intern_profiles_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

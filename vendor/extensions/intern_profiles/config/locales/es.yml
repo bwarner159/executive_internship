@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      intern_profiles:
+        title: Intern Profiles
+#        article: masculino/femenino
+    intern_profiles:
+      admin:
+        intern_profiles:
+          actions:
+            create_new: Crear nuevo intern profile
+            reorder: Reordenar intern profiles
+            reorder_done: Reordenación de intern profiles completada
+          records:
+            title: Intern Profiles
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay intern profiles todavía. Pulsa en "Crear nuevo Intern Profile" para crear tu primer intern profile.
+          intern_profile:
+            view_live_html: Ver este intern profile como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este intern profile
+            delete: Borrar este intern profile para siempre
+      intern_profiles:
+        show:
+          other: Otros intern profiles
+  activerecord:
+    attributes:
+      'refinery/intern_profiles/intern_profile':
+        name: Name
+        class_year: Class Year
+        organization: Organization
+        mentor: Mentor
+        college: College
+        job_title: Job Title
+        info: Info
+        profile_pic: Profile Pic

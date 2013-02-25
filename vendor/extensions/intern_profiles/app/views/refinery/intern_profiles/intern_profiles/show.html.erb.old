@@ -1,0 +1,69 @@
+<% content_for :body_content_title do %>
+  <%= @intern_profile.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @intern_profile.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Class Year</h1>
+    <p>
+      <%=raw @intern_profile.class_year %>
+    </p>
+  </section>
+  <section>
+    <h1>Organization</h1>
+    <p>
+      <%=raw @intern_profile.organization %>
+    </p>
+  </section>
+  <section>
+    <h1>Mentor</h1>
+    <p>
+      <%=raw @intern_profile.mentor %>
+    </p>
+  </section>
+  <section>
+    <h1>College</h1>
+    <p>
+      <%=raw @intern_profile.college %>
+    </p>
+  </section>
+  <section>
+    <h1>Job Title</h1>
+    <p>
+      <%=raw @intern_profile.job_title %>
+    </p>
+  </section>
+  <section>
+    <h1>Info</h1>
+    <p>
+      <%=raw @intern_profile.info %>
+    </p>
+  </section>
+  <section>
+    <h1>Profile Pic</h1>
+    <p>
+      <%= image_fu @intern_profile.profile_pic, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="intern_profiles">
+      <% @intern_profiles.each do |intern_profile| %>
+        <li>
+          <%= link_to intern_profile.name, refinery.intern_profiles_intern_profile_path(intern_profile) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

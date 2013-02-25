@@ -8,3 +8,6 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Intern Profiles extension
+Refinery::InternProfiles::Engine.load_seed

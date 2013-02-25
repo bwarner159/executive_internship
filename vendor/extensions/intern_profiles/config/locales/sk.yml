@@ -1,0 +1,34 @@
+sk:
+  refinery:
+    plugins:
+      intern_profiles:
+        title: Intern Profiles
+    intern_profiles:
+      admin:
+        intern_profiles:
+          actions:
+            create_new: Pridať Intern Profile
+            reorder: Preusporiadať Intern Profiles
+            reorder_done: Koniec radenia Intern Profiles
+          records:
+            title: Intern Profiles
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Intern Profiles. Kliknite na "Pridať Intern Profile" pre pridanie prvého intern profile.
+          intern_profile:
+            view_live_html: Zobraziť náhľad intern profile<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť intern profile
+            delete: Zmazať intern profile
+      intern_profiles:
+        show:
+          other: Daľšie Intern Profiles
+  activerecord:
+    attributes:
+      'refinery/intern_profiles/intern_profile':
+        name: Name
+        class_year: Class Year
+        organization: Organization
+        mentor: Mentor
+        college: College
+        job_title: Job Title
+        info: Info
+        profile_pic: Profile Pic

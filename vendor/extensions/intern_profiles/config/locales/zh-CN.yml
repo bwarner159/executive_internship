@@ -1,0 +1,36 @@
+zh-CN:
+  refinery:
+    plugins:
+      intern_profiles:
+        title: Intern Profiles
+    intern_profiles:
+      admin:
+        intern_profiles:
+          actions:
+            create_new: 建立新的 Intern Profile
+            reorder: 对 Intern Profiles 重新排序
+            reorder_done: 对 Intern Profiles 的重新排序结束
+          records:
+            title: Intern Profiles
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Intern Profiles yet. Click "Add New Intern Profile" to add your first intern profile.
+            no_items_yet: 目前没有 Intern Profiles . 点击 "Add New Intern Profile" 创建一个intern profile.
+          intern_profile:
+            view_live_html: 查看 intern profile 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 intern profile
+            delete: 永久删除 intern profile
+      intern_profiles:
+        show:
+          other: 其他 Intern Profiles
+  activerecord:
+    attributes:
+      'refinery/intern_profiles/intern_profile':
+        name: Name
+        class_year: Class Year
+        organization: Organization
+        mentor: Mentor
+        college: College
+        job_title: Job Title
+        info: Info
+        profile_pic: Profile Pic
