@@ -1,9 +1,9 @@
-<div id="information_body" class="ten columns">
+<%#= render '/refinery/content_page' %>
 
      <!--Header --> 
      <div class = "row">
       <div class = "ten columns">
-       <h3>Intern Profile - John Doe</h3>
+       <h3>Intern Profile - <%= raw @intern_profile.name %></h3>
       </div>
      </div>
      <!--End Header -->
@@ -11,21 +11,21 @@
     <div class= "row">
      <div class="twelve columns">
       <div class= "five columns">
-       <img src="http://placehold.it/200x200" alt="Description of img">
+      <%= image_fu @intern_profile.profile_pic, '200x200' %>
        <ul>
-        <li>Name: John Bon Doe</li>
-        <li>Class: 2013</li>
-        <li>School: Model</li>
-        <li>Job Title: Intern</li>
-        <li>Organization/Company: Harbin Clinic</li>
-        <li>Mentor: George Bush</li>
-        <li>College: Mercer University</li>
+        <li>Name: <%= raw @intern_profile.name %></li>
+        <li>Class: <%= raw @intern_profile.class_year %></li>
+        <li>School: PLEASE CHANGE ME</li>
+        <li>Job Title: <%= @intern_profile.job_title %> </li>
+        <li>Organization/Company: <%= @intern_profile.organization %></li>
+        <li>Mentor: <%= @intern_profile.mentor %></li>
+        <li>College: <%= @intern_profile.college %></li>
        </ul> 
       </div>
      <div class="one column">
      </div>
      <div class="six columns">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies eleifend dui. Etiam mattis, ante vitae malesuada pharetra, justo orci rutrum purus, nec gravida augue risus quis libero. Vestibulum convallis consectetur lorem at hendrerit. Praesent fringilla tincidunt sem, vitae facilisis purus malesuada sed. Mauris molestie tellus at libero adipiscing in vulputate tellus laoreet. Etiam eu nulla et nisl luctus aliquet. In lobortis urna et turpis adipiscing sed lacinia nisl hendrerit. Phasellus mollis luctus elit id porttitor. Ut sed dui id nisi gravida lobortis. Duis eget dui nec erat volutpat venenatis. Curabitur ultrices enim sed sapien ullamcorper vulputate. Cras commodo tempus mi in pretium. Vivamus at vestibulum ligula. Cras odio tortor, accumsan ut tincidunt eget, placerat et nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+      <p><%= raw @intern_profile.info %></p>
 
      </div>
     </div>
@@ -50,5 +50,3 @@
 
 
   </div>
- </div>
-
