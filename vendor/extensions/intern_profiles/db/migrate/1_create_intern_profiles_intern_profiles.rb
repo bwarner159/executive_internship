@@ -3,11 +3,12 @@ class CreateInternProfilesInternProfiles < ActiveRecord::Migration
   def up
     create_table :refinery_intern_profiles do |t|
       t.string :name
+      t.string :school
       t.integer :class_year
-      t.string :organization
-      t.string :mentor
       t.string :college
+      t.string :organization
       t.string :job_title
+      t.string :mentor
       t.text :info
       t.integer :profile_pic_id
       t.integer :position

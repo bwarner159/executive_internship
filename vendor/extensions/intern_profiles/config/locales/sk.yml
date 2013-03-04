@@ -25,10 +25,11 @@ sk:
     attributes:
       'refinery/intern_profiles/intern_profile':
         name: Name
+        school: School
         class_year: Class Year
-        organization: Organization
-        mentor: Mentor
         college: College
+        organization: Organization
         job_title: Job Title
+        mentor: Mentor
         info: Info
         profile_pic: Profile Pic

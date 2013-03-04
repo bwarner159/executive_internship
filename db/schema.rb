@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130225192710) do
+ActiveRecord::Schema.define(:version => 20130304181757) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -27,11 +27,12 @@ ActiveRecord::Schema.define(:version => 20130225192710) do
 
   create_table "refinery_intern_profiles", :force => true do |t|
     t.string   "name"
+    t.string   "school"
     t.integer  "class_year"
-    t.string   "organization"
-    t.string   "mentor"
     t.string   "college"
+    t.string   "organization"
     t.string   "job_title"
+    t.string   "mentor"
     t.text     "info"
     t.integer  "profile_pic_id"
     t.integer  "position"

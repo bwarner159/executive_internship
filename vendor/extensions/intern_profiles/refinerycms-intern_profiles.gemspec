@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-intern_profiles'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Intern Profiles extension for Refinery CMS'
-  s.date              = '2013-02-25'
+  s.date              = '2013-03-04'
   s.summary           = 'Intern Profiles extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
