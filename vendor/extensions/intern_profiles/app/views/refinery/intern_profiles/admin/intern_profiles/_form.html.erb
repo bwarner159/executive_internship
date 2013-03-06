@@ -12,7 +12,7 @@
   
   <div class='field'>
     <%= f.label :school -%>
-    <%= f.text_field :school  -%>
+    <%= f.select(:school, SchoolName::NAMES)  -%>
 
   </div>
   
