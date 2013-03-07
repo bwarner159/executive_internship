@@ -21,6 +21,24 @@
    <div class="row">
     <div class="twelve columns">
       <div class="three columns">
+      <ul>
+      <% SchoolName::NAMES.each do |name| %>
+        <%= name %>
+        <ul>
+          <% @intern_profiles.where(:school => name).order("school DESC").pluck(:class_year).uniq.each do |year| %>   
+            <%= year %>
+            <ul>
+              <%# TODO - Order students alphabetically %> 
+              <% @intern_profiles.where(:school => name, :class_year => year).each do |student| %>
+                <%= link_to student.name, refinery.intern_profiles_intern_profile_path(student) %>
+              <% end %>
+            </ul>
+          <% end %>
+        </ul>
+      <% end %>
+      </ul>
+
+<!-- 
        <ul>
         <li>Armuchee</li>
          <ul>
@@ -49,16 +67,7 @@
          <li>2011</li>
         </ul>
       </ul>
-     </div>
-     <div class="three columns">
-      <ul>
-       <li>Coosa</li>
-        <ul>
-         <li>2013</li>
-         <li>2012</li>
-         <li>2011</li>
-        </ul>
-      <ul>
+-->
      </div>
     </div>
 
