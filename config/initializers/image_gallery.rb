@@ -1,0 +1,1 @@
+Refinery::PageImages.captions = true

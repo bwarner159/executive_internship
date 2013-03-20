@@ -54,3 +54,6 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 
 
 gem 'refinerycms-intern_profiles', :path => 'vendor/extensions'
+
+# Image gallery
+gem 'refinerycms-page-images', '~> 2.0.0'
